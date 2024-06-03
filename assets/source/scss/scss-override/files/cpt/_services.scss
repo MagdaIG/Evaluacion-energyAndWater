@@ -1,0 +1,94 @@
+/*
+ * Shortcode: services.scss
+ * -----------------------------------------------
+*/
+
+.service-item {
+	position: relative;
+	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+	.service-thumb {
+		overflow: hidden;
+		img {
+			@include scale(1);
+			@include transition(all .4s ease-in-out);
+		}
+	}
+	.service-content {
+		background: #fff;
+		text-align: center;
+		padding: 40px;
+		position: relative;
+		.service-title {
+			margin-top: 15px;
+		}
+	}
+	.read-more-button {
+		padding: 15px 45px;
+		border-top: 1px solid #eee;
+		transition: 300ms;
+		background: #fff;
+		width: 100%;
+		.button-text {
+			float: left;
+		}
+		.button-link {
+			float: right;
+		}
+	}
+	&:hover {
+		.service-thumb {
+			img {
+				@include scale(1.1);
+			}
+		}
+		.read-more-button {
+			.button-text a {
+				color: #fff;
+			}
+			.button-link {
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.service-feature {
+	text-align: center;
+	padding: 15px 25px;
+	border-right: 1px solid #ddd;
+	&.no-border {
+		border-right: none;
+	}
+	&.no-border-sm {
+		@include media-breakpoint-down(md) {
+			border-right: none;
+		}
+	}
+	&.no-border-md {
+		@include media-breakpoint-down(lg) {
+			border-right: none;
+		}
+	}
+	.service-feature-icon {
+		margin-bottom: 20px;
+		color: #fff;
+		height: 105px;
+		width: 105px;
+		display: inline-block;
+		line-height: 105px;
+		font-size: 42px;
+		@include transition(all .3s ease-in-out);
+	}
+	.service-feature-title {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	&:hover {
+		.service-feature-icon {
+		}
+	}
+}

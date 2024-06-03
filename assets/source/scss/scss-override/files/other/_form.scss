@@ -1,0 +1,42 @@
+/*
+ * form.scss
+ * -----------------------------------------------
+*/
+.tm-cf7-subscription-form-round-btn {
+	.wpcf7-form-control.wpcf7-text {
+		height: 78px;
+		padding: 0 30px;
+		font-size: 14px;
+		background: #f4f6fb;
+		border: none;
+		border-bottom: 1px solid #fff;
+		opacity: 1;
+		border-radius: 5px;
+	}
+	.submit-btn {
+		position: absolute;
+		right: 7px;
+		top: 59%;
+		transform: translateY(-50%);
+	}
+}
+
+//Masim Contact Form
+.form-control {
+	border: none;
+	background: #FAF9FE;
+	height: 65px;
+	border: 1px solid #e4e4e4;
+}
+.contact-from input.form-control {
+	border: none;
+	background: #FAF9FE;
+	height: 65px;
+	margin-bottom: 25px;
+	border: 1px solid #e4e4e4;
+}
+
+.search-button {
+	height: 65px;
+	border-radius: 0;
+}

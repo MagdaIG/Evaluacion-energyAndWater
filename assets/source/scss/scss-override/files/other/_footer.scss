@@ -1,0 +1,30 @@
+/*
+ * Shortcode: footer.scss
+ * -----------------------------------------------
+*/
+footer#footer {
+	background-color: #2B2C3E;
+	color: #989baa;
+	font-size: 15px;
+}
+.footer-bottom {
+	border-top: 1px solid #36333b;
+}
+.widget .post .post-right .post-title a {
+	font-size: 15px;
+}
+footer#footer a:not(.social-link):not(.icon) {
+	color: #989baa;
+}
+.widget.widget_nav_menu ul > li::before {
+	content: "-";
+}
+.widget.widget_archive ul > li::before,
+.widget.widget_categories ul > li::before,
+.widget.widget_pages ul > li::before,
+.widget.widget_meta ul > li::before,
+.widget.widget_recent_comments ul > li::before,
+.widget.widget_rss ul > li::before,
+.widget.widget_nav_menu ul > li::before {
+	color: #989baa !important;
+}

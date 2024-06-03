@@ -1,0 +1,53 @@
+/*
+ * Shortcode: staff.scss
+ * -----------------------------------------------
+*/
+
+.team-item {
+	text-align: center;
+	@include transition(all 300ms ease-in-out 0s);
+	.team-thumb {
+		overflow: hidden;
+		img {
+			@include scale(1);
+			@include transition(all .4s ease-in-out);
+		}
+	}
+	.team-content {
+		padding: 20px 15px;
+		border-bottom: 1px solid #E5E7EF;
+		.team-information {
+			margin-bottom: 20px;
+			.team-name {
+				line-height: 24px;
+				font-size: 18px;
+			}
+			.designation {
+				font-size: 14px;
+			}
+		}
+		.styled-icons.icon-team-list {
+			li {
+				a {
+					background: #F8F7FC;
+					color: #8F9199;
+					height: 42px;
+					width: 42px;
+					line-height: 42px;
+					border: 1px solid #e5e7ef;
+					@include transition(all 300ms ease-in-out 0s);
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		.team-thumb {
+			img {
+				@include scale(1.1);
+			}
+		}
+	}
+}

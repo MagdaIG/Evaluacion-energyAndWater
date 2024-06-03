@@ -1,0 +1,213 @@
+/*
+ * Shortcode: current-theme.scss
+ * -----------------------------------------------
+*/
+.pt-210 {
+	padding-top: 120px !important;
+}
+.section-object-img1 {
+	position: relative;
+}
+.section-object-img1:after {
+	background-repeat: no-repeat;
+	background-image: url(../images/section-object1.png);
+	position: absolute;
+	content: "";
+	height: 385px;
+	width: 385px;
+	left: 156px;
+	top: -150px;
+}
+.section-object-img2 {
+	position: relative;
+}
+.section-object-img2:after {
+	background-repeat: no-repeat;
+	background-image: url(../images/section-object2.png);
+	position: absolute;
+	content: "";
+	height: 385px;
+	width: 385px;
+	left: 156px;
+	top: 43%;
+	z-index: -1;
+}
+.opening-hours li, .working-hours li {
+	border-bottom: none;
+}
+.image-box {
+	position: relative;
+}
+.image-box .floating-img1 {
+	position: absolute;
+	left: -175px;
+	z-index: 1;
+	top: 44%;
+	border: 15px solid #fff;
+}
+.about-icon-box .icon-box-title .tick-img {
+	float: left;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.about-icon-box {
+	border-right: 1px solid #ccc;
+	@include media-breakpoint-down(lg) {
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+	}
+}
+.about-icon-box.first-child, .about-icon-box.second-child {
+	border-bottom: 1px solid #ccc;
+}
+.about-icon-box.second-child, .about-icon-box.fourth-child {
+	border-right: none;
+}
+.call-us {
+	margin-left: 20px;
+}
+.call-us .icon i {
+	font-size: 32px;
+	margin-top: 15px;
+	margin-right: 15px;
+	display: inline-block;
+}
+.video-play {
+	position: absolute;
+	bottom: 33px;
+	right: 60px;
+}
+.video-play a {
+	background: #F85158;
+	color: #fff;
+	padding: 40px 52px;
+	font-size: 34px;
+}
+.features-block {
+	text-align: center;
+	.features-icon {
+		i {
+			font-size: 48px;
+			color: #f95259;
+			height: 140px;
+			width: 140px;
+			background: #2a2d3b;
+			display: inline-block;
+			text-align: center;
+			border: 1px solid #444550;
+			line-height: 140px;
+			@include transition(all 300ms ease-in-out 0s);
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	.features-title .title {
+		color: #fff;
+		line-height: 30px;
+	}
+}
+
+.get-the-best {
+	background: #fff;
+	padding: 30px 70px;
+	margin-top: 30px;
+	.icon {
+		margin-right: 30px;
+		margin-top: 25px;
+		float: left;
+	}
+}
+
+.book-service-area {
+	margin-top: 100px;
+	border: 5px solid;
+	@include media-breakpoint-down(lg) {
+		margin-top: 60px;
+	}
+	@include media-breakpoint-down(md) {
+		margin-top: 40px;
+	}
+}
+.book-service-content {
+	padding: 0 50px;
+	@include media-breakpoint-down(sm) {
+    padding: 0 30px;
+	}
+}
+.cp-video-divider .play-video-button .effect-wrapper {
+	font-size: 32px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	overflow: unset;
+	width: 100px;
+	display: inline-block;
+	border-radius: 50%;
+	margin-bottom: 40px;
+}
+.cp-video-divider .play-video-button .effect-wrapper:after {
+	content: "";
+	background: #fff;
+	height: 140px;
+	width: 140px;
+	position: absolute;
+	left: -20px;
+	right: 0;
+	z-index: -1;
+	top: -20px;
+	border-radius: 50%;
+	opacity: 0.06;
+}
+.popup-video-title {
+	font-size: 60px;
+}
+.call-for-estimate-parent {
+	position: relative;
+}
+.call-for-estimate-parent .call-for-estimate {
+	position: absolute;
+	left: -215px;
+	top: 45%;
+	transform: rotate(-90deg);
+	padding: 20px 100px;
+}
+.call-for-estimate-parent .call-for-estimate .number {
+	margin: 0;
+	color: #fff;
+}
+.tm-sc-progress {
+	&.theme-style {
+		.tm-sc-progress-bar {
+			.progress-title-holder {
+				.percent {
+					color: #fff;
+					padding: 1px 10px;
+					bottom: 20px;
+					font-size: 16px;
+					-webkit-transform: translateX(0%);
+					-ms-transform: translateX(0%);
+					-o-transform: translateX(0%);
+					transform: translateX(0%);
+				}
+			}
+			.progress-holder {
+				height: 6px;
+				.progress-content {
+					height: 6px;
+					&:after {
+						content: "";
+						position: absolute;
+						height: 10px;
+						width: 10px;
+						right: -10px;
+						border-radius: 0;
+						top: -21px;
+						clip-path: polygon(100% 0, 0 0, 0 100%);
+					}
+				}
+			}
+		}
+	}
+}
